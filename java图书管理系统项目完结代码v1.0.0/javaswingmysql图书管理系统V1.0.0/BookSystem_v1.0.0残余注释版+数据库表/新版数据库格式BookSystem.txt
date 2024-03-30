@@ -1,0 +1,55 @@
+navicat for mysql   软件创建
+创建时：
+数据库名 booksystem
+字符集：utf8mb4
+排序规则：utf8mb4_unicode_ci
+    
+
+// 数据库连接配置
+        String url = "jdbc:mysql://localhost:3306/booksystem";
+        String user = "root";
+        String password = "123456";
+数据库文件信息
+数据库名称：booksystem
+数据库中俩个表：t_user表和t_book表还有t_admini表
+t_user表数据分为：
+username  类型：varchar  长度255  小数点 0  不是null
+id                类型：int  长度255  小数点 0  不是null  主键
+password  类型：varchar  长度255  小数点 0  不是null  
+
+t_book表数据为：
+id                       类型: int  长度0  小数点 0  不是null  主键
+bookname	 类型: varchar  长度255  小数点 0  不是null  
+bookauthor	类型: varchar  长度255  小数点 0  不是null  
+bookprice	类型: decimal  长度10  小数点 2  不是null  
+bookamount	类型: int  长度0  小数点 0  不是null  
+booktype	类型: varchar  长度255  小数点 0  不是null  
+
+t_admini表数据为：
+id			类型：int  长度 0   小数点 0 不是null  主键 自动递增
+admini		类型：varchar  长度255  小数点0  不是null 
+admpass		类型：varchar  长度255  小数点0  不是null
+
+
+mysql数据表不分大小写格式：
+
+// 表格列名
+        String[] columnNames = {"ID", "BookName", "BookAuthor","Price","Amount","BookType"};
+
+数据库表中均为小写
+{"id", "bookname", "bookauthor","price","amount","booktype"};
+
+
+
+        // 数据库连接配置
+        String url = "jdbc:mysql://localhost:3306/booksystem";
+        String user = "root";
+        String password = "123456";
+
+        // 表格列名
+        String[] columnNames = {"ID", "BookName", "BookAuthor","Price","Amount","BookType"};
+
+
+
+
+待增加
